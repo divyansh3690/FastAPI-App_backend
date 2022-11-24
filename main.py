@@ -12,7 +12,7 @@ app.include_router(posts.router)
 
 @app.get("/")
 async def hello():
-    return {"This is homepage. Please open docs or postman "}
+    return {"This is homepage. Please open docs(add /docs with the existing url) or postman "}
 
 
 
