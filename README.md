@@ -28,9 +28,9 @@ Now, as mentioned above there are two ways to run the application:
 ## API Endpints:
 #### 1. users
 
-###### i.)  Adding new users (POST operation)
+##### i.)  Adding new users (POST operation)
             /authentication/newuser
-###### ii.) Login (POST operation)
+##### ii.) Login (POST operation)
             /authentication/token
 ######   NOTE- This request will retun a token for authentication of the user.
 ######         Always use these commands after the specified url.
