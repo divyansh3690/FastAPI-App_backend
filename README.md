@@ -2,7 +2,7 @@
 This is a social media posting app where people can share their thoughts, ideas and many more CRUD Operations.
 
 ## OVERVIEW:
-Go to https://posts-app-backend.onrender.com/ for backend overview.
+Go to https://posts-app-backend.onrender.com/ for backend overview.Wait for 10 seconds give it time to load.
 Keep in mind that this is just backend part of the application .
 Thus, you will need to run it on OpenAPI or Postman.
 
