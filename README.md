@@ -32,7 +32,7 @@ Now, as mentioned above there are two ways to run the application:
             /authentication/newuser
 ##### ii.) Login (POST operation)
             /authentication/token
-######   NOTE- This request will retun a token for authentication of the user.
+######   NOTE- This request will return a token for authentication of the user.
 ######         Always use these commands after the specified url.
 
 #### 2. Home page / Publishing 
