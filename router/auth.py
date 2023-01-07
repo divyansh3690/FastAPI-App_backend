@@ -95,6 +95,10 @@ def create_access_token(username: str, user_id: int,
     encode.update({"exp": expire})
     return jwt.encode(encode, SECRET_KEY, algorithm=ALGORITHM)
 
+@router.get("/",tags=["users"])
+async def get_all_users(db:Session=Depends(get_db)):
+    return db.query(model.Users).all()
+
 
 @router.post("/newuser", tags=["users"])
 async def create_newuser(newuser: ui_user, db: Session = Depends(get_db)):
