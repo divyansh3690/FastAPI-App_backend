@@ -17,7 +17,7 @@ import model
 SECRET_KEY = "KlgH6AzYDeZeGwD288to79I3vTHT8wp7"
 ALGORITHM = "HS256"
 
-oauth2_bearer = OAuth2PasswordBearer(tokenUrl="token")
+oauth2_bearer = OAuth2PasswordBearer(tokenUrl="/authentication/token")
 model.Base.metadata.create_all(bind=engine)
 
 
@@ -120,7 +120,7 @@ async def get_token(formdata: OAuth2PasswordRequestForm = Depends(),
         raise token_exception()
     token_expires = timedelta(minutes=20)
     token = create_access_token(user.username, user.id, expires_delta=token_expires)
-    return {"token": token}
+    return dict(access_token=token,token_type="Bearer")
 
 
 def token_exception():

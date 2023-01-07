@@ -27,7 +27,7 @@ def get_db():
 class ui_posts(BaseModel):
     title: str
     description: Optional[str]
-    is_archived: bool
+    is_archived: int
 
 
 @router.get("/")
