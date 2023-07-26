@@ -1,4 +1,4 @@
-# FastAPI-App_backend
+# Social Share: A Social media API 
 This is a social media posting app where people can share their thoughts, ideas and many more CRUD Operations.
 
 ## OVERVIEW:
